@@ -19,10 +19,10 @@ The codebase follows the **Feature-Sliced Design** methodology for long-term mai
 src/
 ├── app/ # Application core (store, routing, providers)
 ├── pages/ # Page-level compositions
-├── widgets/ # Complex UI blocks (e.g., ProjectGallery)
-├── features/ # Business logic units (e.g., theme switching, contact form)
-├── entities/ # Domain entities (e.g., Project, Skill)
-└── shared/ # Reusable across layers (UI components, hooks, utils, assets)
+├── widgets/ # Complex UI blocks
+├── features/ # Business logic units 
+├── entities/ # Domain entities
+└── shared/ # Reusable across layers
 ```
 This structure enables:
 
