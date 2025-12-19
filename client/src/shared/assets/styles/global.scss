@@ -1,0 +1,37 @@
+@use './_utils/vars';
+@use './_utils/mixins';
+
+:root {
+  --main-bg-color: #ececec;
+  --main-text-color: #000000;
+  --portfolio-name: #433f3f;
+}
+
+[data-theme='dark'] {
+  --main-bg-color: #121212;
+  --main-text-color: #ffffff;
+  --portfolio-name: #bcb4b4;
+ 
+}
+
+
+* {
+// box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+.app-layout {
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 30px;
+}
+

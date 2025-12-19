@@ -1,0 +1,76 @@
+@use "@/shared/assets/styles/global";
+
+:root {
+    
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 54px;
+        width: 100%;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            h1 {
+                color: var(--main-text-color);
+                margin: 0;
+                font-size: 40px !important;
+                font-weight: 350 !important;
+
+                @media (max-width: 530px) {
+                    font-size: 30px !important;
+                }
+
+                @media (max-width: 420px) {
+                    font-size: 25px !important;
+                }
+            }
+            
+            .word {
+                font-weight: 350;
+                color: #ae8bf8;
+            }
+            
+            .card {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                background: var(--main-bg-color);
+                padding: 20px 10px;
+                border-radius: 15px;
+                box-shadow:  2px 2px 3px rgba(255, 255, 255, 0.9);
+                transition: all 0.3s ease;
+                font-weight: 350;
+                font-size: 25px;
+                color: var(--main-text-color);
+
+                @media (max-width: 530px) {
+                    display: flex;
+                    gap: 5px;
+                    padding: 15px 7px;
+                    font-size: 15px;
+                }
+
+                @media (max-width: 355px) {
+                    display: flex;
+                    gap: 5px;
+                    padding: 10px 5px;
+                    font-size: 10px;
+                }
+            }
+
+            .card::before {
+                content: "🎯";
+                flex-shrink: 0;
+                line-height: 1.2;
+            }
+            
+            .card:hover {
+                transform: translateY(-4px);                
+                box-shadow: inset 3px 3px 4px rgba(40, 39, 39, 0.5);
+            }
+        }
+    }
+}

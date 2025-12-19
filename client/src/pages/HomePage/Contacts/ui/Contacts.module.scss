@@ -1,0 +1,73 @@
+@use "../../../../shared//assets/styles/global";
+
+:root {
+
+    .contacts {
+        margin-top: 100px;
+        border-radius: 15px;
+        background: var(--main-bg-color);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+        transition: all 0.3s ease;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .headline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .headline-text {
+                font-size: 40px;
+                font-weight: 350;
+                color: var(--main-text-color);
+
+                .word {
+                    font-weight: 350;
+                    color: #ae8bf8;
+                }
+
+                @media (max-width: 390px) {
+                    font-size: 25px;
+                }
+            }
+            
+            .link{
+                display: flex;
+                gap: 15px;
+                
+
+                .button {
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-radius: 50%;
+                    padding: 13px;
+                    border: 2px solid transparent;
+                    background:#ffffff;
+                    box-shadow: inset 3px 3px 4px rgba(40, 39, 39, 0.5);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    
+                }
+                .button:hover {
+                    border-color: #ae8bf8;
+                }
+
+                @media (max-width: 1300px) {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            color: var(--main-text-color);
+        }
+    }
+    .contacts:hover {
+        transform: translateY(-4px);
+        box-shadow: inset 3px 3px 4px rgba(40, 39, 39, 0.5);
+    }
+}
