@@ -4,8 +4,8 @@ services:
       context: ./client
       dockerfile: Dockerfile
     container_name: react-client
-    ports:
-      - "3000:80"
+    # ports:
+    #   - "3000:80"
     
 
   nginx:
