@@ -29,7 +29,7 @@ const About = () => {
         className={ styles['text'] }
       >
         <TextType
-          text={"Hello! My name is\n Egor Loskutov.\nI can do some great\n things for you."}
+          text={"Hello! My name is\n Alexander Loskutov.\nI can do some great\n things for you."}
           typingSpeed={75}
           showCursor={true}
           loop={false}
