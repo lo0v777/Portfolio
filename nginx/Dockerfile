@@ -1,9 +1,7 @@
-# FROM nginx:alpine
+FROM nginx:alpine
 
-# # COPY nginx.conf /etc/nginx/nginx.conf
+# COPY nginx.conf /etc/nginx/nginx.conf
 
-# EXPOSE 80
+EXPOSE 80
 
-# CMD ["nginx", "-g", "daemon off;"]
-
-FROM baseImage
+CMD ["nginx", "-g", "daemon off;"]
