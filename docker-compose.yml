@@ -1,8 +1,40 @@
+# services:
+#   client:
+#     build:
+#       context: ./client
+#       dockerfile: Dockerfile
+#     container_name: react-client
+#     ports:
+#       - "127.0.0.1:8080:80"   
+
+
+
+
+version: '3.8'
+
 services:
   client:
     build:
       context: ./client
       dockerfile: Dockerfile
     container_name: react-client
+    expose:
+      - "80"
+    networks:
+      - app-network
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: nginx-proxy
     ports:
-      - "127.0.0.1:8080:80"   
+      - "80:80"
+    depends_on:
+      - client
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
