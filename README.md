@@ -36,7 +36,7 @@ This structure enables:
 * **Light/dark theme toggle** with user preference persisted in `localStorage`  
 * Fully **responsive design** — optimized for mobile, tablet, and desktop  
 * Smooth **animations** and micro-interactions for enhanced UX  
-
+* Creating reports using **GoAccess**
 
 ---
 
