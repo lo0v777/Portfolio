@@ -19,7 +19,7 @@ const EXPERIENCE = [
       id: 1,
       date: "March 2025 — Present",
       title: "Frontend Developer",
-      company: "Freelance",
+      company: "Education",
       description: "Website development. Fixing layout bugs. Writing simple scripts. Creating task for university.",
       stack: [HtmlSvg, CssSvg, JsSvg, ViteSvg, ReactSvg, HooksSvg, TypeScriptSvg, ReduxSvg, MuiSvg, TwSvg, SassSvg, FigmaSvg, DockerSvg],
     },
